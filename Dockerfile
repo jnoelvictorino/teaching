@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/python:1-3.11-bullseye
 
-LABEL org.opencontainers.image.source=https://github.com/jnoelvictorino/teaching
-LABEL org.opencontainers.image.description="Dev Container for teaching Repository"
+LABEL org.opencontainers.image.source=https://github.com/jnv-teaching/teaching
+LABEL org.opencontainers.image.description="Dev Container for Teaching Repository"
 LABEL org.opencontainers.image.licenses=Apache-2.0
 
 # Set working directory

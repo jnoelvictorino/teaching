@@ -45,7 +45,7 @@ if [ -z "$VERSION" ]; then
 fi
 
 IMAGE_NAME=teaching
-FULL_IMAGE_NAME=ghcr.io/jnoelvictorino/$IMAGE_NAME
+FULL_IMAGE_NAME=ghcr.io/jnv-teaching/$IMAGE_NAME
 
 echo "Building image..."
 docker build -t $FULL_IMAGE_NAME:latest \
