@@ -1,9 +1,13 @@
-*.csv
-*.xlsx
-__pycache__/
-*.env
+# Byte-compiled / optimized / DLL files
+*.pyc
+*/__pycache__/*
+.venv/*
 
-# model files
+# Environment file
+.env
+
+# Model files
 *.pkl
 
+# Old notebooks
 old/*

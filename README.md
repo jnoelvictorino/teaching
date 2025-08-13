@@ -1,4 +1,4 @@
-# Introduction to Artificial Intelligence
+# JNV's Teaching Notebooks, Scripts
 
 ## Setup
 * Install Python 3.11.8 or higher

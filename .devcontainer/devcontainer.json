@@ -1,21 +1,30 @@
 {
-  "name": "intro-to-ai",
+  "name": "Teaching",
   "dockerComposeFile": "docker-compose.yml",
-  "service": "notebook",
-  "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
-  "updateContentCommand": "bash .devcontainer/setupContainer.sh",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "mounts": [
+    "source=${localEnv:USERPROFILE}\\.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+  ],
   "customizations": {
     "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "python.terminal.activateEnvInCurrentTerminal": true
+      },
       "extensions": [
         "donjayamanne.githistory",
-        "GitHub.copilot",
-        "GitHub.copilot-chat",
-        "GitHub.codespaces",
+        "github.copilot",
+        "github.copilot-chat",
+        "github.vscode-pull-request-github",
+        "ecmel.vscode-html-css",
         "ms-azuretools.vscode-docker",
         "ms-python.autopep8",
         "ms-python.isort",
         "ms-python.vscode-pylance",
         "ms-python.python",
+        "ms-python.vscode-python-envs",
         "ms-toolsai.jupyter",
         "ms-toolsai.vscode-jupyter-cell-tags",
         "ms-toolsai.jupyter-keymap",
@@ -24,9 +33,11 @@
         "ms-vscode.live-server",
         "ms-vsliveshare.vsliveshare",
         "GrapeCity.gc-excelviewer",
-        "ecmel.vscode-html-css",
-        "mechatroner.rainbow-csv"
+        "mechatroner.rainbow-csv",
+        "redhat.vscode-yaml",
+        "huizhou.githd"
       ]
     }
-  }
+  },
+  "remoteUser": "vscode"
 }

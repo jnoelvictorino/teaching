@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.cache/
+.venv/
+
+# Temp files
+tmp/
+
+# VS Code
+.vscode/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Environment/config
+.env
+.env.*
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
