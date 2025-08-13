@@ -1,0 +1,9 @@
+*.csv
+*.xlsx
+__pycache__/
+*.env
+
+# model files
+*.pkl
+
+old/*

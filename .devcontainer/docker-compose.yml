@@ -1,0 +1,29 @@
+services:
+  notebook:
+    image: cschranz/gpu-jupyter:v1.6_cuda-11.8_ubuntu-22.04
+    volumes:
+      - ../..:/workspace:cached
+    user: root
+    environment:
+      - GRANT_SUDO=yes
+      - CHOWN_HOME=yes
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - capabilities:
+    #             - gpu
+    # ports:
+    #   - 5000:5000
+    # expose:
+    #   - 5000
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           capabilities: [ gpu ]
+    #           device_ids: [ "0" ] # select one GPU
+    #     limits:
+    #       cpus: "1.0"
+    #       memory: 16g

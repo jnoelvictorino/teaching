@@ -1,0 +1,4 @@
+openpyxl
+ipympl
+icecream
+streamlit
