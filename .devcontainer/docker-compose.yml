@@ -1,6 +1,6 @@
 services:
   app:
-    image: ghcr.io/jnv-teaching/teaching:latest
+    image: ghcr.io/JNV-teaching/teaching:latest
     volumes:
       - ..:/workspaces/teaching
     command: sleep infinity
